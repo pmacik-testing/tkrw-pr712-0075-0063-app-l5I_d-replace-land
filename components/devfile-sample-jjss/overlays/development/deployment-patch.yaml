@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-jjss
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0063-tenant/tkrw-pr712-0075-0063-app/devfile-sample-jjss@sha256:2d1809896b84c11f5b85f137805e285315c439f8789c8a16f3e9a48f1bd9490b
+        name: my-nodejs
+        resources: {}
+status: {}
